@@ -1,4 +1,5 @@
 #!/bin/bash
+# https://leetcode.com/problems/word-frequency/
 
 sed -E 's/(\s+)/\n/g' words.txt | \
     sed  '/^$/d' | \

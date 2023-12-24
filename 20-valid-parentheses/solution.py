@@ -1,5 +1,9 @@
+# https://leetcode.com/problems/valid-parentheses/
+
 class Solution:
-    """Input: s = "()[]{}"
+    """Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', 
+    determine if the input string is valid.
+    Input: s = "()[]{}"
     Output: true
     
     Input: s = "(]"
@@ -38,10 +42,10 @@ class Solution:
 
 s = Solution()
 
-print(s.isValid("()[]"))
-print(s.isValid("()[]<>"))
-print(s.isValid("[((<{}>))]"))
-print(s.isValid("(]"))
-print(s.isValid("("))
-print(s.isValid("]"))
-print(s.isValid("()[]<"))
+print(s.isValid("()[]"))  # true
+print(s.isValid("()[]<>"))  # true
+print(s.isValid("[((<{}>))]"))  # true
+print(s.isValid("(]"))  # false
+print(s.isValid("("))  # invalid
+print(s.isValid("]"))  # invalid
+print(s.isValid("()[]<"))  # invalid
