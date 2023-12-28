@@ -12,11 +12,13 @@ class Solution:
         right = len(s) - 1        
         
         while left < right:
+            # advance left and right pointers if char is not alpha num
             while left < right and not self.is_alpha_num(s[left]):
                 left += 1
             while right > left and not self.is_alpha_num(s[right]):
                 right -= 1
 
+            # compare left and right chars... if not equal, then it's not a palindrone
             l = s[left].upper()
             r = s[right].upper()
             if s[left].upper() == s[right].upper():
